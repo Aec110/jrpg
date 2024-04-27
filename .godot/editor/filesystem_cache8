@@ -1,0 +1,31 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1714221424
+battle_scene.tscn::PackedScene::2932975146268732071::1714015440::0::1::::<><>::uid://1sqhv0wglfca::::res://BG_FF2_09.png<>uid://c8pmhm5r4y55x::::res://enemy_group.tscn<>uid://cso16ptxsys7n::::res://player_group.tscn<>uid://ct82e3bbvlqoh::::res://Battlers/Axolotl.ttf
+BG_FF2_09.png::CompressedTexture2D::1863053849222014608::1714008299::1714008375::1::::<><>::
+character.gd::GDScript::-1::1714014763::0::1::::<>CharacterBody2D<>::
+character.tscn::PackedScene::225401149145278091::1714015440::0::1::::<><>::uid://dbcioauhilcgd::::res://Battlers/World01_007_Pirate.png<>res://character.gd<>uid://bgfx3mt484j8n::::res://cursor_finger.png
+cursor_finger.png::CompressedTexture2D::2819322788348923371::1714008299::1714008375::1::::<><>::
+enemy_group.gd::GDScript::-1::1714027999::0::1::::<>Node2D<>::
+enemy_group.tscn::PackedScene::7120780655659168443::1714015440::0::1::::<><>::res://enemy_group.gd<>uid://dhglaskb1pqp::::res://character.tscn<>uid://dhwdbthivdbqp::::res://Battlers/World01_002_Salamander.png
+icon.svg::CompressedTexture2D::540260084363850935::1714008299::1714008375::1::::<><>::
+player_group.gd::GDScript::-1::1714014763::0::1::::<>Node2D<>::
+player_group.tscn::PackedScene::6066776661122171797::1714015440::0::1::::<><>::uid://dhglaskb1pqp::::res://character.tscn<>res://player_group.gd<>uid://cmyltc6kcqrf1::::res://Ready_00.png<>uid://dxj62k40b3kgw::::res://Ready_00 #133.png
+Ready_00 #32.png::CompressedTexture2D::8345740343274484639::1714008299::1714008375::1::::<><>::
+Ready_00 #133.png::CompressedTexture2D::8794115868922942298::1714008299::1714008375::1::::<><>::
+Ready_00 #139.png::CompressedTexture2D::8719377411956185183::1714008299::1714008375::1::::<><>::
+Ready_00.png::CompressedTexture2D::5665354527537962280::1714008299::1714008375::1::::<><>::
+::res://Battlers/::1714221388
+Axolotl.ttf::FontFile::6176201836645662379::1714010666::1714010667::1::::<><>::
+Readme.txt::TextFile::-1::1714008299::0::1::::<><>::
+World01_001_GreenGoo.png::CompressedTexture2D::8229858976922549086::1714008299::1714008375::1::::<><>::
+World01_002_Salamander.png::CompressedTexture2D::7696185213055998939::1714008299::1714008375::1::::<><>::
+World01_003_Bird.png::CompressedTexture2D::5845560795522265830::1714008299::1714008375::1::::<><>::
+World01_004_WailingPrince.png::CompressedTexture2D::353946232627613952::1714008299::1714008375::1::::<><>::
+World01_005_Shello.png::CompressedTexture2D::2960362376462153746::1714008299::1714008375::1::::<><>::
+World01_006_Witch.png::CompressedTexture2D::4059462017867918317::1714008299::1714008375::1::::<><>::
+World01_007_Pirate.png::CompressedTexture2D::7234090418507517199::1714008299::1714008375::1::::<><>::
+World04_001_ LaserDrone.png::CompressedTexture2D::3185767280690550601::1714008299::1714008375::1::::<><>::
+World04_002_ ScoutMachine.png::CompressedTexture2D::1872666323010733357::1714008299::1714008375::1::::<><>::
+World04_003_ Outlaw.png::CompressedTexture2D::8498463741368399474::1714008299::1714008375::1::::<><>::
+::res://Scenes/::1714008515
+::res://Scripts/::1714008520

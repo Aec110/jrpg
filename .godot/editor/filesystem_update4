@@ -1,0 +1,5 @@
+res://enemy_group.tscn
+res://battle_scene.tscn
+res://player_group.tscn
+res://character.tscn
+res://enemy_group.gd
