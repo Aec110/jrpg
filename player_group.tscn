@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://cso16ptxsys7n"]
+[gd_scene load_steps=6 format=3 uid="uid://cso16ptxsys7n"]
 
 [ext_resource type="PackedScene" uid="uid://dhglaskb1pqp" path="res://character.tscn" id="1_gdlj3"]
 [ext_resource type="Script" path="res://player_group.gd" id="1_v6p6a"]
 [ext_resource type="Texture2D" uid="uid://cmyltc6kcqrf1" path="res://Ready_00.png" id="2_ek8y2"]
 [ext_resource type="Texture2D" uid="uid://dxj62k40b3kgw" path="res://Ready_00 #133.png" id="4_53u1j"]
+[ext_resource type="Texture2D" uid="uid://dwhy4wdmobvgx" path="res://Ready_00 #139.png" id="5_hy5n5"]
 
 [node name="PlayerGroup" type="Node2D"]
 script = ExtResource("1_v6p6a")
@@ -20,5 +21,12 @@ texture = ExtResource("2_ek8y2")
 scale = Vector2(0.75, 0.75)
 texture = ExtResource("4_53u1j")
 
+[node name="Character4" parent="." instance=ExtResource("1_gdlj3")]
+
+[node name="Sprite2D" parent="Character4" index="0"]
+scale = Vector2(0.75, 0.75)
+texture = ExtResource("5_hy5n5")
+
 [editable path="Character"]
 [editable path="Character3"]
+[editable path="Character4"]

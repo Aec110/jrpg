@@ -1,15 +1,15 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1714221424
-battle_scene.tscn::PackedScene::2932975146268732071::1714015440::0::1::::<><>::uid://1sqhv0wglfca::::res://BG_FF2_09.png<>uid://c8pmhm5r4y55x::::res://enemy_group.tscn<>uid://cso16ptxsys7n::::res://player_group.tscn<>uid://ct82e3bbvlqoh::::res://Battlers/Axolotl.ttf
+::res://::1714356861
+battle_scene.tscn::PackedScene::2932975146268732071::1714222369::0::1::::<><>::uid://1sqhv0wglfca::::res://BG_FF2_09.png<>uid://c8pmhm5r4y55x::::res://enemy_group.tscn<>uid://cso16ptxsys7n::::res://player_group.tscn<>uid://ct82e3bbvlqoh::::res://Battlers/Axolotl.ttf
 BG_FF2_09.png::CompressedTexture2D::1863053849222014608::1714008299::1714008375::1::::<><>::
 character.gd::GDScript::-1::1714014763::0::1::::<>CharacterBody2D<>::
-character.tscn::PackedScene::225401149145278091::1714015440::0::1::::<><>::uid://dbcioauhilcgd::::res://Battlers/World01_007_Pirate.png<>res://character.gd<>uid://bgfx3mt484j8n::::res://cursor_finger.png
+character.tscn::PackedScene::225401149145278091::1714222369::0::1::::<><>::uid://dbcioauhilcgd::::res://Battlers/World01_007_Pirate.png<>res://character.gd<>uid://bgfx3mt484j8n::::res://cursor_finger.png
 cursor_finger.png::CompressedTexture2D::2819322788348923371::1714008299::1714008375::1::::<><>::
-enemy_group.gd::GDScript::-1::1714027999::0::1::::<>Node2D<>::
-enemy_group.tscn::PackedScene::7120780655659168443::1714015440::0::1::::<><>::res://enemy_group.gd<>uid://dhglaskb1pqp::::res://character.tscn<>uid://dhwdbthivdbqp::::res://Battlers/World01_002_Salamander.png
+enemy_group.gd::GDScript::-1::1714222625::0::1::::<>Node2D<>::
+enemy_group.tscn::PackedScene::7120780655659168443::1714222625::0::1::::<><>::res://enemy_group.gd<>uid://dhglaskb1pqp::::res://character.tscn<>uid://dhwdbthivdbqp::::res://Battlers/World01_002_Salamander.png
 icon.svg::CompressedTexture2D::540260084363850935::1714008299::1714008375::1::::<><>::
 player_group.gd::GDScript::-1::1714014763::0::1::::<>Node2D<>::
-player_group.tscn::PackedScene::6066776661122171797::1714015440::0::1::::<><>::uid://dhglaskb1pqp::::res://character.tscn<>res://player_group.gd<>uid://cmyltc6kcqrf1::::res://Ready_00.png<>uid://dxj62k40b3kgw::::res://Ready_00 #133.png
+player_group.tscn::PackedScene::6066776661122171797::1714222369::0::1::::<><>::uid://dhglaskb1pqp::::res://character.tscn<>res://player_group.gd<>uid://cmyltc6kcqrf1::::res://Ready_00.png<>uid://dxj62k40b3kgw::::res://Ready_00 #133.png
 Ready_00 #32.png::CompressedTexture2D::8345740343274484639::1714008299::1714008375::1::::<><>::
 Ready_00 #133.png::CompressedTexture2D::8794115868922942298::1714008299::1714008375::1::::<><>::
 Ready_00 #139.png::CompressedTexture2D::8719377411956185183::1714008299::1714008375::1::::<><>::

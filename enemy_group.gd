@@ -74,9 +74,16 @@ func _on_attack_pressed():
 
 func _on_player_group_players_updated(players: Array):
 	numPlayers = players.size()
-	for player in players:
-		if numPlayers > 0:
-			var randomIndex = randi_range(0, numPlayers - 1)
-			player.take_damage(1)
-		else:
-			return null
+	var randomValue = randi_range(1, 3)
+	if numPlayers != 0:
+		for enemy in enemies:
+			var randPlayer = randi_range(0, 2)
+			if enemy == enemies[1]:
+				var damage = 1
+				var is_magic = randf() < BASE_CRITICAL_CHANCE
+				if is_magic:
+					damage = 2
+				players[randPlayer].take_damage(damage)
+			players[randPlayer].take_damage(1)
+			await get_tree().create_timer(1).timeout
+			
