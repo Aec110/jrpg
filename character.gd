@@ -29,3 +29,7 @@ func attack(target):
 
 func take_damage(value):
 	health -= value
+	
+func die():
+	if health <= 0:
+		animation_player.play("death")

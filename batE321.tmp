@@ -1,0 +1,83 @@
+[gd_scene load_steps=5 format=3 uid="uid://bh10w4aa6fdhv"]
+
+[ext_resource type="Texture2D" uid="uid://1sqhv0wglfca" path="res://BG_FF2_09.png" id="1_kdkxg"]
+[ext_resource type="PackedScene" uid="uid://c8pmhm5r4y55x" path="res://enemy_group.tscn" id="1_sqmju"]
+[ext_resource type="PackedScene" uid="uid://cso16ptxsys7n" path="res://player_group.tscn" id="3_r3x7u"]
+[ext_resource type="FontFile" uid="uid://ct82e3bbvlqoh" path="res://Battlers/Axolotl.ttf" id="4_frsky"]
+
+[node name="BattleScene" type="Node2D"]
+texture_filter = 1
+
+[node name="TextureRect" type="TextureRect" parent="."]
+self_modulate = Color(0.505882, 0.505882, 0.505882, 1)
+offset_left = -16.0
+offset_top = -9.0
+offset_right = 304.0
+offset_bottom = 171.0
+scale = Vector2(1.1, 1.1)
+texture = ExtResource("1_kdkxg")
+expand_mode = 1
+
+[node name="EnemyGroup" parent="." instance=ExtResource("1_sqmju")]
+position = Vector2(55, 47)
+
+[node name="PlayerGroup" parent="." instance=ExtResource("3_r3x7u")]
+position = Vector2(248, 54)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="choice" type="VBoxContainer" parent="CanvasLayer"]
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -36.0
+offset_top = -55.0
+offset_right = 29.0
+offset_bottom = 46.0
+grow_horizontal = 0
+grow_vertical = 0
+scale = Vector2(0.501243, 0.501243)
+
+[node name="Attack" type="Button" parent="CanvasLayer/choice"]
+texture_filter = 1
+layout_mode = 2
+theme_override_fonts/font = ExtResource("4_frsky")
+theme_override_font_sizes/font_size = 32
+text = "Attack"
+
+[node name="Defend" type="Button" parent="CanvasLayer/choice"]
+texture_filter = 1
+layout_mode = 2
+theme_override_fonts/font = ExtResource("4_frsky")
+theme_override_font_sizes/font_size = 32
+disabled = true
+text = "Defend"
+
+[node name="Magic" type="Button" parent="CanvasLayer/choice"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("4_frsky")
+theme_override_font_sizes/font_size = 32
+disabled = true
+text = "Magic"
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer"]
+texture_filter = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -68.5
+offset_right = 68.5
+offset_bottom = 30.0
+grow_horizontal = 2
+size_flags_vertical = 4
+theme_override_fonts/normal_font = ExtResource("4_frsky")
+theme_override_font_sizes/normal_font_size = 16
+bbcode_enabled = true
+text = "[center]THIS IS ACTION"
+scroll_active = false
+
+[connection signal="next_player" from="EnemyGroup" to="PlayerGroup" method="_on_enemy_group_next_player"]
+[connection signal="players_updated" from="PlayerGroup" to="EnemyGroup" method="_on_player_group_players_updated"]
+[connection signal="pressed" from="CanvasLayer/choice/Attack" to="EnemyGroup" method="_on_attack_pressed"]

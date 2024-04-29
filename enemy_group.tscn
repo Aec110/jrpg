@@ -8,12 +8,15 @@
 script = ExtResource("1_6rovn")
 
 [node name="Character" parent="." instance=ExtResource("2_jlsyg")]
+MAX_HEALTH = 10.0
 
 [node name="Character2" parent="." instance=ExtResource("2_jlsyg")]
+MAX_HEALTH = 10.0
 
 [node name="Sprite2D" parent="Character2" index="0"]
 texture = ExtResource("3_s7saw")
 
 [node name="Character3" parent="." instance=ExtResource("2_jlsyg")]
+MAX_HEALTH = 10.0
 
 [editable path="Character2"]

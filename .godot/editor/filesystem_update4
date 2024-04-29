@@ -4,3 +4,4 @@ res://battle_scene.tscn
 res://character.tscn
 res://enemy_group.gd
 res://player_group.gd
+res://character.gd

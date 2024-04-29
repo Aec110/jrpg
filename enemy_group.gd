@@ -47,6 +47,7 @@ func _action(stack):
 			damage = 2
 		enemies[i].take_damage(damage)
 		await get_tree().create_timer(1).timeout
+		enemies[i].die()
 	action_queue.clear()
 	is_battling = false
 	show_choice()
@@ -72,6 +73,7 @@ func _on_attack_pressed():
 	choice.hide()
 	_start_choosing()
 
+## Enemy attacks players
 func _on_player_group_players_updated(players: Array):
 	numPlayers = players.size()
 	var randomValue = randi_range(1, 3)
